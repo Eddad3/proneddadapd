@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@layer components {
+  .section-card {
+    @apply rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-xl;
+  }
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(to bottom right, #1B263B, #2C2C2C);
+}
